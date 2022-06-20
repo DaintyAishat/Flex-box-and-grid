@@ -3,6 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    height: ;
+body{
+    height:100vh ;
+    display: flex;
+    place-items: center;
+    background-color: black;
+    
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e';
+    gap:10px;
+    width: 60%;
+    margin: auto;
+}
+main div{
+    padding: 2em;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.col1{
+background-color: orangered;
+grid-area: a;
+}
+.col2{
+background-color:gold ;
+grid-area: b;
+}
+.col3{
+background-color: green;
+grid-area: c;
+}
+.col4{
+background-color: cyan;
+grid-area: d;
+}
+.col5{
+background-color: cyan;
+grid-area: e;
 }
